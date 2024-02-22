@@ -82,6 +82,14 @@ section {
     border-radius: 50%;
 }
 
+/* bottoni */
+.btn {
+    background-color: var(--negative-color);
+    color: var(--main-color);
+    border-radius: 20px;
+    padding: 25px 0px;
+}
+
 /* -------------------------------------------------------------------------------- */
 /* ! Header */
 /* -------------------------------------------------------------------------------- */
@@ -105,19 +113,17 @@ nav>ul {
     display: none;
 }
 
-nav ul li a:not(.btn) {
-    padding: 0 15px;
-    height: 90px;
+nav ul li a {
+    padding: 20px 15px;
+    display: inline-block;
 }
 
-.debug-g {
-    border: 1px solid green;
-}
-
+/* nav ul li a .btn {
+    padding: 20px 0;
+} */
 /* -------------------------------------------------------------------------------- */
 /* ! Footer */
-/* -------------------------------------------------------------------------------- */
-footer {
+-------------------------------------------------------------------------------- footer {
     background-color: var(--footer-color);
     color: var(--negative-color);
 }
