@@ -10,6 +10,8 @@ body {
     color: var(--main-color);
     background-color: var(--negative-color);
     padding-top: 80px;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 a {
@@ -52,13 +54,13 @@ a {
 }
 
 section {
-    padding: 20px;
+    padding: 40px 20px;
     scroll-margin-top: 75px;
 }
 
 /* Card */
 .card {
-    padding: 10px;
+    padding: 20px;
 }
 
 .card-negative {
@@ -128,8 +130,34 @@ nav ul li a.btn {
 }
 
 /* -------------------------------------------------------------------------------- */
+/* ! Features */
+/* -------------------------------------------------------------------------------- */
+#features .card {
+    background-color: var(--contrast-color);
+    color: var(--footer-color);
+    margin-bottom: 20px;
+}
+
+#features .card-icon {
+    font-size: 5rem;
+}
+
+#features .card .card-icon,
+#features .card h3.card-title {
+    color: var(--header-color);
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Planner */
+/* -------------------------------------------------------------------------------- */
+#planning h1 {
+    font-size: 1.8rem;
+}
+
+/* -------------------------------------------------------------------------------- */
 /* ! Footer */
--------------------------------------------------------------------------------- footer {
+/* -------------------------------------------------------------------------------- */
+footer {
     background-color: var(--footer-color);
     color: var(--negative-color);
 }
@@ -145,5 +173,25 @@ nav ul li a.btn {
 
     nav>ul {
         display: flex;
+    }
+
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    #features .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    #features .card {
+        width: calc(100% / 5 - 15px);
+        aspect-ratio: 1 / 1;
+    }
+
+    #features .card:first-child {
+        width: calc((100% / 5 - 15px) * 2);
     }
 }
