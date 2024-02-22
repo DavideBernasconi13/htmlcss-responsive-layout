@@ -154,6 +154,19 @@ nav ul li a.btn {
     font-size: 1.8rem;
 }
 
+#planning .square {
+    height: 50px;
+    width: 50px;
+    background-color: var(--section-color);
+    margin: 0 auto;
+}
+
+.square a {
+    color: var(--main-color);
+    padding: 20px;
+    transform: translateY(20%);
+}
+
 /* -------------------------------------------------------------------------------- */
 /* ! Footer */
 /* -------------------------------------------------------------------------------- */
@@ -187,11 +200,11 @@ footer {
     }
 
     #features .card {
-        width: calc(100% / 5 - 15px);
+        width: calc(100% / 3 - 15px);
         aspect-ratio: 1 / 1;
     }
 
     #features .card:first-child {
-        width: calc((100% / 5 - 15px) * 2);
+        width: calc((100% / 3 - 15px) * 2);
     }
 }
