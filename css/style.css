@@ -35,7 +35,6 @@ body {
 /* ! Layout */
 /* -------------------------------------------------------------------------------- */
 .container {
-    width: 100%;
     padding: 20px;
 }
 
@@ -80,9 +79,12 @@ header {
     left: 0;
     z-index: 999;
     width: 100%;
+    color: var(--negative-color);
+    display: flex;
+    /* justify-content: space-between; */
 }
 
-nav {
+nav>ul {
     display: none;
 }
 
