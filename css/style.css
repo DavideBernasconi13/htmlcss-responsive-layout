@@ -88,6 +88,7 @@ section {
     color: var(--main-color);
     border-radius: 30px;
     padding: 10px 20px;
+    display: inline-block;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -103,6 +104,7 @@ header {
     color: var(--negative-color);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav .icon-hamburger {
@@ -115,13 +117,10 @@ nav>ul {
 
 nav ul li a {
     padding: 20px 15px;
-    display: inline-block;
+    display: flex;
     align-items: center;
 }
 
-/* nav ul li a .btn {
-    padding: 20px 0;
-} */
 /* -------------------------------------------------------------------------------- */
 /* ! Footer */
 -------------------------------------------------------------------------------- footer {
