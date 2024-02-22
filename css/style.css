@@ -107,14 +107,11 @@ nav>ul {
 
 nav ul li a:not(.btn) {
     padding: 0 15px;
+    height: 90px;
 }
 
 .debug-g {
     border: 1px solid green;
-}
-
-li a {
-    height: 90px;
 }
 
 /* -------------------------------------------------------------------------------- */
