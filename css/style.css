@@ -1,3 +1,95 @@
-h1 {
-    color: coral;
+/* -------------------------------------------------------------------------------- */
+/* ! GENERAL */
+/* -------------------------------------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "PT Sans", sans-serif;
+    color: var(--main-color);
+    background-color: var(--negative-color);
+    padding-top: 80px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Color */
+/* -------------------------------------------------------------------------------- */
+/* Custom properties */
+:root {
+    --section-color: #9792e4;
+    --header-color: #0084fd;
+    --contrast-color: #b5ddff;
+    --accent-color: #fdc15f;
+    --footer-color: #333333;
+    --main-color: #000000;
+    --negative-color: #ffffff;
+}
+
+.even {
+    background-color: var(--section-color);
+    color: var(--negative-color);
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Layout */
+/* -------------------------------------------------------------------------------- */
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    scroll-margin-top: 75px;
+}
+
+/* Card */
+.card {
+    padding: 10px;
+}
+
+.card-negative {
+    background-color: var(--negative-color);
+    color: var(--main-color);
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Utilities */
+/* -------------------------------------------------------------------------------- */
+/* border */
+.rounded-big {
+    border-radius: 40px;
+}
+
+.rounded-small {
+    border-radius: 20px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Header */
+/* -------------------------------------------------------------------------------- */
+header {
+    background-color: var(--header-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+nav {
+    display: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Footer */
+/* -------------------------------------------------------------------------------- */
+footer {
+    background-color: var(--footer-color);
+    color: var(--negative-color);
 }
